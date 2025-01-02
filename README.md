@@ -14,6 +14,7 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - Intel VT
 - Internal flashing after coreboot is installed
 - CPU Temp (coretemp)
+- Poweroff
 
 **Untested:**  
 - PCIe  
