@@ -13,6 +13,7 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - iGPU with 3D acceleration
 - Intel VT
 - Internal flashing after coreboot is installed
+- CPU Temp (coretemp)
 
 **Untested:**  
 - PCIe  
