@@ -12,6 +12,7 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - Serial Port  
 - iGPU with 3D acceleration
 - Intel VT
+- Internal flashing after coreboot is installed
 
 **Untested:**  
 - PCIe  
@@ -21,6 +22,8 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - Windows
 - Intel ME (I have it purposely disabled)
 - Intel UEFI PEI System Agent (mrc.bin)
+
+- This may work on the M73 and M83, as they seem similar, but I have not tested. You may need to check for the flash size since the M93p supports AMT and therefore has a 8+4MB config to support the extended Intel ME partition.
 
 ## Prerequisites
 
