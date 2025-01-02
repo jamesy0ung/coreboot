@@ -26,7 +26,8 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - Intel UEFI PEI System Agent (mrc.bin)
 
 **Not Working:**
-- Automatic Fan Control (Lenovo Intelligent Cooling Engine) 
+- Automatic Fan Control (Lenovo Intelligent Cooling Engine)
+- HDD Activity Light
 
 - This may work on the M73 and M83, as they seem similar, but I have not tested. You may need to check for the flash size since the M93p supports AMT and therefore has a 8+4MB config to support the extended Intel ME partition.
 
