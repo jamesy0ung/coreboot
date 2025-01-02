@@ -15,6 +15,9 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - Internal flashing after coreboot is installed
 - CPU Temp (coretemp)
 - Poweroff
+- Intel UEFI PEI System Agent (mrc.bin)
+- Haswell Native raminit
+
 
 **Untested:**  
 - PCIe  
@@ -23,18 +26,14 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - TPM
 - Windows
 - Intel ME (I have it purposely disabled)
-- Intel UEFI PEI System Agent (mrc.bin)
 
 **Not Working:**
 - Automatic Fan Control (Lenovo Intelligent Cooling Engine)
 - HDD Activity Light
 
 - This may work on the M73 and M83, as they seem similar, but I have not tested. You may need to check for the flash size since the M93p supports AMT and therefore has a 8+4MB config to support the extended Intel ME partition.
-
-## Prerequisites
-
-1. A standard Coreboot repository
-2. The haswell-nri patch train, which can be applied using:
+  
+To use haswell-nri (one less blob!)
 ```bash
 git fetch https://review.coreboot.org/coreboot refs/changes/48/81948/2
 git checkout -b change-81948 FETCH_HEAD
