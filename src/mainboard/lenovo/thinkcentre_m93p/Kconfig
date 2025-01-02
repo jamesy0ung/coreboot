@@ -1,0 +1,34 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+if BOARD_LENOVO_THINKCENTRE_M93P
+
+config BOARD_SPECIFIC_OPTIONS
+	def_bool y
+	select BOARD_ROMSIZE_KB_12288
+	select HAVE_ACPI_RESUME
+	select HAVE_ACPI_TABLES
+	select MAINBOARD_HAS_LIBGFXINIT
+	select NORTHBRIDGE_INTEL_HASWELL
+	select SERIRQ_CONTINUOUS_MODE
+	select SOUTHBRIDGE_INTEL_LYNXPOINT
+	select SUPERIO_ITE_IT8728F
+    select SUPERIO_ITE_COMMON_PRE_RAM
+    select SUPERIO_ITE_COMMON_GPIO_PRE_RAM
+	select MAINBOARD_USES_IFD_GBE_REGION
+
+config MAINBOARD_DIR
+	string
+	default "lenovo/thinkcentre_m93p"
+
+config MAINBOARD_PART_NUMBER
+	string
+	default "ThinkCentre M93p"
+
+config VGA_BIOS_ID
+	string
+	default "8086,0412"
+
+config USBDEBUG_HCD_INDEX # FIXME: check this
+	int
+	default 2
+endif
