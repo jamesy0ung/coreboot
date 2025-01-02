@@ -35,6 +35,11 @@ git checkout -b change-81948 FETCH_HEAD
 Start by running `make menuconfig` and configure the following settings:
 
 ```
+Mainboard
+  Mainboard Vendor Name -> Lenovo
+  Mainboard part number > ThinkCentre M93p
+  Size of CBFS filesystem in ROM -> 0x00680000
+
 Chipset
   [*] Use native raminit
   [*] Add Intel descriptor.bin file
