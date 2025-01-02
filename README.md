@@ -20,6 +20,7 @@ Tested on Debian 12.8.0 (kernel 6.1.0-28)
 - TPM
 - Windows
 - Intel ME (I have it purposely disabled)
+- Intel UEFI PEI System Agent (mrc.bin)
 
 ## Prerequisites
 
