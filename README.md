@@ -34,6 +34,7 @@ git checkout -b change-81948 FETCH_HEAD
 
 Start by running `make menuconfig` and configure the following settings:
 
+```
 Chipset
   [*] Use native raminit
   [*] Add Intel descriptor.bin file
@@ -57,6 +58,7 @@ Console
   [*] Enable console output during postcar  
   [*] Squelch AP CPUs from early console
   [ ] SPI Flash console output
+```
 
 ### Payload
 Both edk2 and seabios have been tested successfully. Note that edk2 requires "Allocate resources from top down" to be disabled.
